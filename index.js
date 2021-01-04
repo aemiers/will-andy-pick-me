@@ -33,4 +33,36 @@ var answers = [
   "Outlook not so good.",
   "Very doubtful.",
 ]
+var currentAnswer;
+
 // ~~~~~~~~~~~~~~~~~ functions ~~~~~~~~~~~~~~~~~~~~~~~~
+
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
+}
+
+function toggleHidden(element) {
+  element.classList.toggle("hidden");
+}
+
+function deactivateReactivate(element) {
+  element.classList.toggle("disabled");
+}
+
+function showHide() {
+  toggleHidden(eightBallImage);
+  toggleHidden(askedQuestion);
+  toggleHidden(answer);
+  deactivateReactivate(clearButton);
+}
+
+function generateAnswer() {
+  event.preventDefault();
+  showHide();
+  answer.innerText = answers[generateRandomIndex(answers)],
+
+}
+
+function clearField() {
+
+}
