@@ -10,3 +10,99 @@ light blue background: #E6ECF4;
 clear button: #DE4841;
 clear button disabled: #D0CDCD
 */
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.disabled {
+  background-color: #D0CDCD !important;
+  color: white;
+  border: none;
+  height: 2em;
+  width: 4em;
+  cursor: none;
+  pointer-events: none;
+}
+
+.header-container {
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Life Savers', serif;
+  color: #2B4E80;
+}
+
+.clear-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.user-question,
+.get-your-answer {
+  margin-left: 1em;
+  margin-right: 1em;
+  border: none;
+  height: 2em;
+}
+
+.user-question {
+  margin-top: .5em;
+  margin-bottom: .25em;
+  padding-left: 5em;
+}
+
+.get-your-answer {
+  background-color: #607AA0;
+  color: white;
+}
+
+.get-your-answer:hover {
+  background-color: #1C3455;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-section {
+  background-color: #E6ECF4;
+  width: 20em;
+  height: 17em;
+  display: flex;
+  flex-direction: column;
+}
+
+.eight-ball {
+  width: 5em;
+  margin-top: 3em;
+  margin-left: 7em;
+}
+
+.clear {
+  background-color: #DE4841;
+  color: white;
+  border: none;
+  height: 2em;
+  width: 4em;
+}
+
+.woody {
+  height: 17em;
+  padding-left: 3em;
+}
