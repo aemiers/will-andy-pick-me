@@ -33,7 +33,6 @@ var answers = [
   "Outlook not so good.",
   "Very doubtful.",
 ]
-var currentAnswer;
 
 // ~~~~~~~~~~~~~~~~~ functions ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -59,10 +58,10 @@ function showHide() {
 function generateAnswer() {
   event.preventDefault();
   showHide();
-  answer.innerText = answers[generateRandomIndex(answers)],
-
+  askedQuestion.innerText = userQuestion.value;
+  answer.innerText = answers[generateRandomIndex(answers)];
 }
 
-function clearField() {
-
-}
+// function clearField() {
+//
+// }
